@@ -17,8 +17,16 @@
     color: crimson;
 }
 
+.header a:hover {
+    font-weight: 700;
+}
+
 .header button {
     background-color: crimson;
     color: white;
     border: 0;
+}
+
+button:hover {
+    background-color: brown;
 }
