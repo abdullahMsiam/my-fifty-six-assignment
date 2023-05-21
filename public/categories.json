@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1y",
+        "categoryLogo": "https://cdn-icons-png.flaticon.com/512/24/24509.png?w=740&t=st=1684673045~exp=1684673645~hmac=98f2c889ab8916272728baf5e48d025123fef27ad42772e2f7e2cce35c226a78",
+        "categoryName": "Manager",
+        "jobAvailable": "20+"
+    },
+    {
+        "id": "2y",
+        "categoryLogo": "https://cdn-icons-png.flaticon.com/512/126/126341.png?w=740&t=st=1684673104~exp=1684673704~hmac=a96d0d31fc5cb0c6fd6f71a3214a2e78820dc05132a3dc943b106f660107a676",
+        "categoryName": "Customer Service",
+        "jobAvailable": "100"
+    },
+    {
+        "id": "3y",
+        "categoryLogo": "https://cdn-icons-png.flaticon.com/512/40/40028.png?w=740&t=st=1684673118~exp=1684673718~hmac=bdf0cbbbd0c9dc35c3a0eb2ee3131ad26af89ba339fb69e4004dc6d3f14f1d44",
+        "categoryName": "Locate Product",
+        "jobAvailable": "150"
+    },
+    {
+        "id": "4y",
+        "categoryLogo": "https://cdn-icons-png.flaticon.com/512/1239/1239345.png?w=740&t=st=1684673144~exp=1684673744~hmac=3feb018e8409487137aa2431cb29a0632806c25908f3cb16f8d23e43c97b38f3",
+        "categoryName": "Internet Manager",
+        "jobAvailable": "10"
+    }
+]
