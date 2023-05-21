@@ -10,7 +10,8 @@
     width: 30%;
 }
 
-button {
+.btn-detail {
+    color: white;
     background-color: crimson;
     padding: 9px 15px;
 }

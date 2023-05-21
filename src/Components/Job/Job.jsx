@@ -19,7 +19,7 @@ const Job = ({ job }) => {
                 <p>{location}</p>
                 <p>Salary: {salary}</p>
             </div>
-            <button>View Details</button>
+            <button className='btn-detail'>View Details</button>
         </div>
     );
 };

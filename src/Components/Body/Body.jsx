@@ -49,6 +49,10 @@ const Body = () => {
                             job={job}
                         ></Job>)
                     }
+
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0' }}>
+                    <button className='btn-detail'>Show All Jobs</button>
                 </div>
             </div>
         </div>
