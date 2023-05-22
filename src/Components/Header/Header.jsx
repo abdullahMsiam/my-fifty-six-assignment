@@ -26,7 +26,6 @@ const Header = () => {
                     <button>Get Start</button>
                 </div>
             </div>
-            <Body></Body>
         </div>
     );
 };

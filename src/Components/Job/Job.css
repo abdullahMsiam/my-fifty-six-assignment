@@ -4,6 +4,7 @@
     border: 2px solid gray;
     border-radius: 7px;
     padding: 20px 30px;
+    background-color: rgba(220, 20, 60, 0.073);
 }
 
 .job-info img {
