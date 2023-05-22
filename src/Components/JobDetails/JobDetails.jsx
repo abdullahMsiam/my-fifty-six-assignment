@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './JobDetails.css';
 import { useLoaderData, useParams } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const JobDetails = () => {
     const jobs = useLoaderData();
@@ -17,9 +18,9 @@ const JobDetails = () => {
     // console.log(id)
     // console.log(job)
     return (
-        <div>
-            <h1>job detail</h1>
-            <div>
+        <div className='job-details'>
+            <h1>job details</h1>
+            <div className='job-detail-info'>
                 <div>
                     <h4>Job Description:</h4>
                     <p> {jobDescription} </p>
@@ -28,8 +29,8 @@ const JobDetails = () => {
                     <h4>Educational Requirement:</h4> <p>{educationalRequirements}</p>
                     <h4>Experiences: </h4> <p>{experiences}</p>
                 </div>
-                <div>
-                    <div>
+                <div className='job-deep'>
+                    <div >
                         <h4>Job Detail</h4>
                         <hr />
                         <p>Salary: {salary} (per-month)</p>
@@ -42,6 +43,7 @@ const JobDetails = () => {
                     <button className='btn-detail'>Apply Now</button>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

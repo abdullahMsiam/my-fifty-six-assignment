@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Category from '../Category/Category';
 import './Body.css'
 import Job from '../Job/Job';
+import Footer from '../Footer/Footer';
 
 const Body = () => {
     const [categories, setCategories] = useState([]);
@@ -55,6 +56,7 @@ const Body = () => {
                     <button className='btn-detail'>Show All Jobs</button>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,0 +1,37 @@
+.job-details h1 {
+    text-align: center;
+}
+
+.job-details h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.job-details p {
+    margin: 0 auto 5px;
+}
+
+.job-detail-info {
+    margin: 50px 100px 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-deep {
+    background-color: rgba(220, 20, 60, 0.073);
+    padding: 40px 50px 40px;
+    border-radius: 8px;
+}
+
+.job-deep button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.job-deep hr {
+    margin-right: 100px;
+}
