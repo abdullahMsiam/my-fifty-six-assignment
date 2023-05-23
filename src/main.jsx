@@ -14,6 +14,7 @@ import Blog from './Components/Blog/Blog.jsx'
 import JobDetails from './Components/JobDetails/JobDetails.jsx';
 import Body from './Components/Body/Body.jsx';
 import jobsLoaders from './Loaders/Loaders.js';
+import Review from './Components/ReviewJob/Review.jsx';
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '/review',
+        element: <Review></Review>,
+        loader: jobsLoaders
       }
     ]
   }

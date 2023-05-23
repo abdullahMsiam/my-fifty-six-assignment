@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './JobDetails.css';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Footer from '../Footer/Footer';
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
-    const jobs = useLoaderData();
+    const { jobs } = useLoaderData();
     const { id } = useParams();
 
+    console.log(jobs);
 
     const remJob = jobs.find(jb => jb.id === id);
-    console.log(remJob);
+
     const { companyLogo, jobTitle, companyName, categoryOne, categoryTwo, location, timeOne, TimeTwo, salary, jobDescription, jobResponsibility, educationalRequirements, experiences, phone } = remJob;
-    console.log(location);
+
+    const handleAddToDb = id => {
+        addToDb(id);
+    }
 
 
 
@@ -40,7 +45,7 @@ const JobDetails = () => {
                         <p>Email: email899@gmail.com</p>
                         <p>Address: {location}</p>
                     </div>
-                    <button className='btn-detail'>Apply Now</button>
+                    <Link to="/review"><button onClick={() => handleAddToDb()} className='btn-detail'>Apply Now</button></Link>
                 </div>
             </div>
             <Footer></Footer>
