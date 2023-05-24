@@ -16,3 +16,14 @@
     gap: 40px;
 
 }
+
+@media screen and (max-width: 570px) {
+    .categories {
+        flex-direction: column;
+    }
+
+    .jobs {
+        grid-template-columns: 1fr;
+    }
+
+}

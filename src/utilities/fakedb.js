@@ -11,7 +11,7 @@ const addToDb = id => {
         shoppingCart[id] = newQuantity;
     }
     localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
-    console.log(shoppingCart);
+
 }
 
 const removeFromDb = id => {

@@ -5,7 +5,7 @@ const jobsLoaders = async () => {
     const jobs = await loadedJobs.json();
     // return jobs;
     const storedCart = getShoppingCart();
-    // console.log(storedCart);
+
     const savedCart = [];
     for (const id in storedCart) {
         const addedProduct = jobs.find(jb => jb.id === id);

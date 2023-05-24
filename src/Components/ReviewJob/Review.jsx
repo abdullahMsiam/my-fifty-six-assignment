@@ -8,8 +8,6 @@ const Review = () => {
     const { savedCart } = useLoaderData();
 
     const [jobs, setJobs] = useState(savedCart);
-    // console.log(jobs);
-    // console.log(savedCart);
     return (
         <div>
             <div className='job-review'>

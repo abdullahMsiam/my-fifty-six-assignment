@@ -38,10 +38,6 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>
       },
       {
-        path: '/appliedJob',
-        element: <AppliedJob></AppliedJob>
-      },
-      {
         path: 'blog',
         element: <Blog></Blog>
       },

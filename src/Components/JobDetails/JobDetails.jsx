@@ -8,7 +8,7 @@ const JobDetails = () => {
     const { jobs } = useLoaderData();
     const { id } = useParams();
 
-    console.log(jobs);
+
 
     const remJob = jobs.find(jb => jb.id === id);
 
@@ -40,7 +40,7 @@ const JobDetails = () => {
                         <p>Email: email899@gmail.com</p>
                         <p>Address: {location}</p>
                     </div>
-                    <Link to="/review"><button onClick={() => handleAddToDb(id)} className='btn-detail'>Apply Now</button></Link>
+                    <button onClick={() => handleAddToDb(id)} className='btn-detail'>Apply Now</button>
                 </div>
             </div>
             <Footer></Footer>

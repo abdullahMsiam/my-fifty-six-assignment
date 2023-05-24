@@ -6,10 +6,8 @@ import JobDetails from '../JobDetails/JobDetails';
 
 const Job = ({ job }) => {
     const { id, companyLogo, jobTitle, companyName, categoryOne, categoryTwo, location, timeOne, TimeTwo, salary } = job;
-    // console.log(job);
-    // const [job, setJob] = useState([]);
+
     const handleToDetails = (id) => {
-        // window.location.href(`/jobDetails/${id}`)
     }
 
 
