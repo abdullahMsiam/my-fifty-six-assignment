@@ -18,11 +18,16 @@ const Body = () => {
             .then(res => res.json())
             .then(data => setJobs(data))
     }, []);
-    // const firstJobs = []; 
-    // for(const i = 0; i < jobs.length-2; i++){
 
-    // }
-    const firstJobs = jobs.slice(0, 4);
+    const fJobs = jobs.slice(0, 4);
+    let firstJobs = [...fJobs];
+
+    const newJobs = [...jobs];
+
+    const handleAllJobs = () => {
+        firstJobs = newJobs;
+    }
+
 
     return (
         <div>
@@ -53,7 +58,7 @@ const Body = () => {
 
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0' }}>
-                    <button className='btn-detail'>Show All Jobs</button>
+                    <button onClick={() => handleAllJobs()} className='btn-detail'>Show All Jobs</button>
                 </div>
             </div>
             <Footer></Footer>
