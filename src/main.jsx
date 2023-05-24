@@ -15,12 +15,14 @@ import JobDetails from './Components/JobDetails/JobDetails.jsx';
 import Body from './Components/Body/Body.jsx';
 import jobsLoaders from './Loaders/Loaders.js';
 import Review from './Components/ReviewJob/Review.jsx';
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
