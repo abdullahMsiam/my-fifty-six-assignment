@@ -17,11 +17,6 @@ const JobDetails = () => {
     const handleAddToDb = id => {
         addToDb(id);
     }
-
-
-
-    // console.log(id)
-    // console.log(job)
     return (
         <div className='job-details'>
             <h1>job details</h1>
@@ -45,7 +40,7 @@ const JobDetails = () => {
                         <p>Email: email899@gmail.com</p>
                         <p>Address: {location}</p>
                     </div>
-                    <Link to="/review"><button onClick={() => handleAddToDb()} className='btn-detail'>Apply Now</button></Link>
+                    <Link to="/review"><button onClick={() => handleAddToDb(id)} className='btn-detail'>Apply Now</button></Link>
                 </div>
             </div>
             <Footer></Footer>
