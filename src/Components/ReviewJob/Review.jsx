@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ReviewSingle from '../ReviewSingle/ReviewSingle';
+import Footer from '../Footer/Footer';
+import './Review.css'
 
 const Review = () => {
     const { savedCart } = useLoaderData();
@@ -9,9 +12,16 @@ const Review = () => {
     // console.log(savedCart);
     return (
         <div>
-            {
-                jobs.map(job => console.log(job.location))
-            }
+            <div className='job-review'>
+                <h2 style={{ textAlign: 'center', margin: '30px auto 30px' }}>Applied Job</h2>
+                {
+                    jobs.map(job => <ReviewSingle
+                        key={job.id}
+                        job={job}
+                    ></ReviewSingle>)
+                }
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
